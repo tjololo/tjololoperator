@@ -1,0 +1,26 @@
+# permissions to do edit playgrounds.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: playground-editor-role
+rules:
+- apiGroups:
+  - app.tjololo.net
+  resources:
+  - playgrounds
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - app.tjololo.net
+  resources:
+  - playgrounds/status
+  verbs:
+  - get
+  - patch
+  - update

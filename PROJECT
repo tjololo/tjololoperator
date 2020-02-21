@@ -1,3 +1,7 @@
 domain: tjololo.net
 repo: tjololoperator
+resources:
+- group: app
+  kind: Playground
+  version: v1alpha1
 version: "2"

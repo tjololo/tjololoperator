@@ -1,0 +1,7 @@
+apiVersion: app.tjololo.net/v1alpha1
+kind: Playground
+metadata:
+  name: playground-sample
+spec:
+  # Add fields here
+  foo: bar
